@@ -179,8 +179,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
-STRIPE_PUBLIC_KEY = os.getenv('pk_test_51Qt8S6LwFJk1QYFLbL5LlfnC9y30GoDERv0a9KVf4P572L7Ht3gNcKDRuKORUk9Rxj2bRAS0NLIBt8j9RoGDdlFQ00UqMRhNRg', '')
-STRIPE_SECRET_KEY = os.getenv('sk_test_51Qt8S6LwFJk1QYFLprjf1qoArtg2v4iNPKQ86RmvjknpGK9oXO0NssMNQtxz2348aGewop1MH2ACCgjTG7m7erzg00MhcRZE5Z', '')
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')  # Fetch from environment
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')  # Fetch from environment
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 # Default primary key field type
